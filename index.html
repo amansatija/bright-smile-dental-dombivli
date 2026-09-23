@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bright Smile Dental Clinic | Dombivli East</title>
+  <meta name="description" content="Bright Smile Dental Clinic at Runwal Gardens, Dombivli East. Care from Dr. Amit Patankar & Dr. Sumant Jagtap — family dentistry, implants, root canal, emergency care." />
+  <meta name="theme-color" content="#0d9488" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --teal: #0d9488;
+      --teal-dark: #0f766e;
+      --ink: #134e4a;
+      --muted: #5b716e;
+      --bg: #f7fbfa;
+      --card: #fff;
+      --line: #d7ebe8;
+      --soft: #f0fdfa;
+      --radius: 18px;
+      --shadow: 0 12px 40px rgba(13,148,136,.12);
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: "DM Sans", system-ui, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.55; }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1100px, calc(100% - 2rem)); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 20; backdrop-filter: blur(12px); background: rgba(247,251,250,.92); border-bottom: 1px solid var(--line); }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: .85rem 0; }
+    .brand { display: flex; align-items: center; gap: .7rem; font-weight: 700; }
+    .logo { width: 40px; height: 40px; border-radius: 12px; background: linear-gradient(145deg, var(--teal), #14b8a6); color: #fff; display: grid; place-items: center; font-family: Fraunces, serif; }
+    .brand small { display: block; font-weight: 500; color: var(--muted); font-size: .75rem; }
+    .nav-actions { display: flex; gap: .5rem; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: .35rem; border-radius: 999px; padding: .72rem 1.15rem; font-weight: 600; font-size: .92rem; border: 1px solid transparent; }
+    .btn-primary { background: var(--teal); color: #fff; }
+    .btn-primary:hover { background: var(--teal-dark); }
+    .btn-ghost { background: #fff; border-color: var(--line); }
+    .btn-wa { background: #25d366; color: #fff; }
+    .hero { padding: 3rem 0 2.2rem; display: grid; gap: 2rem; grid-template-columns: 1.15fr .85fr; align-items: center; }
+    .pill { display: inline-flex; background: #ccfbf1; color: var(--teal-dark); padding: .35rem .75rem; border-radius: 999px; font-size: .8rem; font-weight: 600; margin-bottom: 1rem; }
+    h1 { font-family: Fraunces, Georgia, serif; font-size: clamp(2rem, 4vw, 2.9rem); line-height: 1.15; letter-spacing: -.02em; margin-bottom: 1rem; }
+    .lead { color: var(--muted); font-size: 1.05rem; max-width: 36rem; margin-bottom: 1.4rem; }
+    .hero-cta { display: flex; flex-wrap: wrap; gap: .7rem; margin-bottom: 1.2rem; }
+    .meta { display: grid; gap: .8rem; grid-template-columns: 1fr 1fr; color: var(--muted); font-size: .9rem; }
+    .meta strong { display: block; color: var(--ink); }
+    .hero-card { background: var(--card); border: 1px solid var(--line); border-radius: 24px; padding: 1.35rem; box-shadow: var(--shadow); }
+    .hero-card h2 { font-size: 1.05rem; margin-bottom: .85rem; }
+    .stats { display: grid; grid-template-columns: 1fr 1fr; gap: .7rem; margin-bottom: 1rem; }
+    .stat { background: var(--soft); border-radius: 14px; padding: .85rem; }
+    .stat b { display: block; font-size: 1.2rem; color: var(--teal-dark); }
+    .stat span { font-size: .78rem; color: var(--muted); }
+    .hours { list-style: none; font-size: .88rem; color: var(--muted); }
+    .hours li { padding: .22rem 0; }
+    section { padding: 2.3rem 0; }
+    .stitle { font-family: Fraunces, Georgia, serif; font-size: clamp(1.45rem, 3vw, 1.9rem); margin-bottom: .4rem; }
+    .ssub { color: var(--muted); margin-bottom: 1.4rem; max-width: 36rem; }
+    .grid3 { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+    .card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.2rem; }
+    .icon { width: 42px; height: 42px; border-radius: 12px; margin-bottom: .8rem; background: var(--soft); display: grid; place-items: center; }
+    .card h3 { font-size: 1.02rem; margin-bottom: .35rem; }
+    .card p { color: var(--muted); font-size: .92rem; }
+    .docs { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; }
+    .doc { display: flex; gap: 1rem; align-items: center; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: 1.05rem; }
+    .av { width: 64px; height: 64px; border-radius: 18px; flex-shrink: 0; background: linear-gradient(145deg, #99f6e4, #5eead4); display: grid; place-items: center; font-family: Fraunces, serif; font-size: 1.25rem; color: var(--teal-dark); }
+    .doc h3 { font-size: 1.05rem; }
+    .doc p { color: var(--muted); font-size: .88rem; }
+    .band { background: linear-gradient(135deg, var(--teal-dark), var(--teal)); color: #fff; border-radius: 28px; padding: 1.7rem; display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; justify-content: space-between; }
+    .band h2 { font-family: Fraunces, serif; font-size: 1.55rem; }
+    .band p { opacity: .92; margin-top: .3rem; }
+    .band .btn { background: #fff; color: var(--teal-dark); }
+    .map { border-radius: 24px; overflow: hidden; border: 1px solid var(--line); background: #e8f5f3; }
+    .map iframe { width: 100%; height: 320px; border: 0; }
+    footer { padding: 2rem 0 2.4rem; color: var(--muted); font-size: .85rem; border-top: 1px solid var(--line); margin-top: 1rem; }
+    .foot { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; }
+    .credit a { text-decoration: underline; text-underline-offset: 2px; }
+    @media (max-width: 840px) {
+      .hero, .grid3, .docs, .meta { grid-template-columns: 1fr; }
+      .nav-actions .btn-ghost { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          Bright Smile Dental
+          <small>Runwal Gardens · Dombivli East</small>
+        </div>
+      </div>
+      <div class="nav-actions">
+        <a class="btn btn-ghost" href="#services">Services</a>
+        <a class="btn btn-primary" href="tel:+919867155950">Call now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="wrap hero">
+      <div>
+        <div class="pill">Open most days · Digital X-ray · Family care</div>
+        <h1>Healthy, confident smiles for every age in Dombivli East.</h1>
+        <p class="lead">Bright Smile Dental Clinic at R-Galleria, Runwal Gardens — gentle care from Dr. Amit Patankar &amp; Dr. Sumant Jagtap. Check-ups, root canals, implants, and emergency dental care.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+919867155950">Call +91 98671 55950</a>
+          <a class="btn btn-wa" href="https://wa.me/919867155950" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        <div class="meta">
+          <div><strong>Address</strong>F1/81, 1st Floor, R-Galleria, above Cream Chills, Runwal Garden</div>
+          <div><strong>Hours</strong>9:00–1:30 &amp; 5:30–9:00 · Wed by appointment</div>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <h2>Book without the rush</h2>
+        <div class="stats">
+          <div class="stat"><b>20+</b><span>Years experience</span></div>
+          <div class="stat"><b>₹200</b><span>Consulting / X-ray*</span></div>
+          <div class="stat"><b>RVG</b><span>Digital X-ray</span></div>
+          <div class="stat"><b>All ages</b><span>Family dentistry</span></div>
+        </div>
+        <ul class="hours">
+          <li>Mon–Sun: 9:00 am – 1:30 pm &amp; 5:30 pm – 9:00 pm</li>
+          <li>Wednesday: by appointment only</li>
+          <li>Kalyan–Shilphata Road, Dombivli East 421204</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="wrap" id="services">
+      <h2 class="stitle">Dental care that fits your family</h2>
+      <p class="ssub">Clear treatments, modern equipment, and a calm clinic — so visiting the dentist feels easier.</p>
+      <div class="grid3">
+        <article class="card"><div class="icon">🦷</div><h3>Family dentistry</h3><p>Check-ups, cleaning, and gentle care for kids, adults, and seniors in one place.</p></article>
+        <article class="card"><div class="icon">💎</div><h3>Root canal (RCT)</h3><p>Treat infection inside the tooth, clean thoroughly, and seal it to protect your smile.</p></article>
+        <article class="card"><div class="icon">🔧</div><h3>Dental implants</h3><p>Long-lasting replacements that look and feel natural — chew and smile with confidence.</p></article>
+        <article class="card"><div class="icon">✨</div><h3>Cosmetic care</h3><p>Whitening, crowns, and smile-focused treatments with a careful, patient-first approach.</p></article>
+        <article class="card"><div class="icon">⚡</div><h3>Emergency care</h3><p>Sudden pain, breakage, or swelling — call us for prompt guidance and treatment.</p></article>
+        <article class="card"><div class="icon">📷</div><h3>Digital diagnostics</h3><p>RVG digital X-ray and intra-oral camera so you can see what we’re treating, clearly.</p></article>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2 class="stitle">Your doctors</h2>
+      <p class="ssub">Experienced dentists with a calm approach — trusted by families around Runwal and Palava.</p>
+      <div class="docs">
+        <div class="doc">
+          <div class="av">AP</div>
+          <div>
+            <h3>Dr. Amit Patankar</h3>
+            <p>BDS (2003) · Implant dentistry · Past President, IDA Dombivli</p>
+          </div>
+        </div>
+        <div class="doc">
+          <div class="av">SJ</div>
+          <div>
+            <h3>Dr. Sumant Jagtap</h3>
+            <p>BDS (2003) · Known for careful, comfortable treatment and family care</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <div class="band">
+        <div>
+          <h2>Need an appointment this week?</h2>
+          <p>Call or WhatsApp the clinic — same numbers patients already use.</p>
+        </div>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;">
+          <a class="btn" href="tel:+919867155950">Call +91 98671 55950</a>
+          <a class="btn btn-wa" href="https://wa.me/919867155950" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <h2 class="stitle">Find us</h2>
+      <p class="ssub">F1/81, 1st Floor, R-Galleria, Runwal Gardens, Dombivli East, Maharashtra 421204</p>
+      <div class="map">
+        <iframe title="Bright Smile Dental Clinic map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://maps.google.com/maps?q=Bright%20Smile%20Dental%20Clinic%20Runwal%20Garden%20Dombivli&t=&z=16&ie=UTF8&iwloc=&output=embed"></iframe>
+      </div>
+      <p style="margin-top:1rem;color:var(--muted);font-size:.9rem;">
+        Email: <a href="mailto:dentalamit@yahoo.com">dentalamit@yahoo.com</a>
+        · *Fees as listed publicly by the clinic; confirm when you call.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <strong style="color:var(--ink)">Bright Smile Dental Clinic</strong><br />
+        Runwal Gardens, Dombivli East<br />
+        © <span id="y"></span> All rights reserved.
+      </div>
+      <div class="credit">
+        Draft preview by <a href="https://techeeez.com" target="_blank" rel="noopener">Techeeez</a>
+        — free for the clinic to keep or change.
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
